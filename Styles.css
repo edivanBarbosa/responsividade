@@ -36,16 +36,26 @@ h2{
     background-image:url(./assets/Rectangle\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     
 }
 #presentation {
-    width: 37.5rem;
-    position: relative;
-    top: calc(50% - 12.5rem);
+    width: 37.5rem; 
 
 }
+#qualities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+#qualities > img{
+    margin: 0 2.5rem;
+}
 .container {
-    padding: 10rem 7.5rem;
+    padding: 5rem 7.5rem;
     text-align: center;
 }
 .contact title {
@@ -66,7 +76,34 @@ h2{
 }
 .background-gradient {
 
-    background: linear-gradient(180deg, #fff, #d9d9d9)
-    
+    background: linear-gradient(180deg, #fff, #d9d9d9)    
 
+}
+.article-container {
+    display: flex;
+    
+}
+.article-container:nth-child(even) {
+    margin-top: 5.5rem;
+    flex-direction: row-reverse;
+    
+}
+
+.background-red {
+    background-color: #F84646;
+    color: #fff;
+}
+.article-details {
+    display: flex;
+    flex-direction: column;    
+    text-align: left;
+    align-items: flex-start;
+    margin: 0 2.5rem 0 0;
+    justify-content: space-between;
+}
+.article-details > button{
+  font-size: 1rem;
+}
+.article-container:nth-child(even) .article-details {
+    margin: 0 0 0 2.5em;
 }
