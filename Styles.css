@@ -3,6 +3,7 @@ html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    font-size: 16px;
 }
 body{
     margin: 0;
@@ -11,35 +12,40 @@ body{
 button {
     background-color: #F84646;
     color: #fff;
-    font-weight: 500;
-    font-size: 24px;
-    padding: 8px 24px;
-    border-radius: 8px;   
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;   
     border: none;
     cursor: pointer;
 }
 h1{
-    font-size: 64px;
-    font-weight: 800;
+    font-size: 4rem;
+    font-weight: 700;
     margin: 0;
 }
 h2{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     margin: 0;
 }
 #presentation-container {
-    padding: 40px 120px;
-    height: 600px;
+    margin-top: 3rem;
+    padding: 2.5rem 7.5rem;
+    height: 100vh;
+    background-image:url(./assets/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 #presentation {
-    width: 600px;
+    width: 37.5rem;
     position: relative;
-    top: calc(50% - 205px);
+    top: calc(50% - 12.5rem);
 
 }
 .container {
-    padding: 160px 120px;
+    padding: 10rem 7.5rem;
     text-align: center;
 }
 .contact title {
@@ -47,9 +53,20 @@ h2{
 
 }
 .container > p {
-    margin-top: 24px;
+    margin-top: 3.5rem;
 }
 
 .container > button {
-    margin-top: 32px;
+    margin-top: 2rem;
+    transition: opacity 0.5s ease-in-out; transform: 0.5s .2s;
+}
+.container > button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.background-gradient {
+
+    background: linear-gradient(180deg, #fff, #d9d9d9)
+    
+
 }
